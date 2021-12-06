@@ -48,8 +48,6 @@ const validateCred = (arr) =>{
 
 const findInvalidCards = (NestedArray) =>{
     let invalidatedCards = NestedArray.filter(arr => validateCred(arr) === false )
-    //console.log(invalidatedCards)
-    //console.log(validateCred)
    return invalidatedCards
 
 }
@@ -82,8 +80,3 @@ const idInvalidCardCompanies = (NestedArray) =>{
     })
     return companies
 }
-//console.log(findInvalidCards(batch).forEach(arr => console.log(validateCred(arr))))
-//findInvalidCards(batch)
-//console.log(validateCred(valid3))
-console.log(idInvalidCardCompanies(findInvalidCards(batch)))
-//console.log(`There are ${idInvalidCardCompanies(findInvalidCards(batch)).length} companies`)
